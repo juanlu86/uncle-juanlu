@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    // MARK: User Defaults
     @IBAction func addDataToUserDefaults() {
         userDefaults.set(true, forKey: UserDefaultsKeys.boolKey)
         userDefaults.set(123, forKey: UserDefaultsKeys.intKey)
@@ -39,6 +40,33 @@ class ViewController: UIViewController {
         let myArray = userDefaults.object(forKey: UserDefaultsKeys.arrayKey)
         
         print("\(myBool), \(myInt), \(String(describing: myObject)), \(String(describing: myArray))")
+    }
+    
+    // MARK: File system
+    func saveFile() {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        let textFile = "textFile.txt"
+        let fileURL = documentsDirectory.appendingPathComponent(textFile)
+        let content = "Hello World"
+        do{
+            try content.write(to: fileURL, atomically: false, encoding: String.Encoding.utf8)
+        }catch _ {
+        }
+    }
+    
+    func loadFile() -> String {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        let textFile = "textFile.txt"
+        let fileURL = documentsDirectory.appendingPathComponent(textFile)
+        let content: String
+        do{
+            content = try String.init(contentsOf: fileURL, encoding: .utf8)
+        } catch _{
+            content=""
+        }
+        return content;
     }
 }
 

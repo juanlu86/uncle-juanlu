@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 struct UserDefaultsKeys {
     static let boolKey = "Key1"
@@ -67,6 +68,18 @@ class ViewController: UIViewController {
             content=""
         }
         return content;
+    }
+    
+    // MARK: SQLite
+    func openDataBase() {
+        let db: SQLiteDatabase
+        do {
+            db = try SQLiteDatabase.open(path: "my database path")
+        } catch SQLiteError.OpenDatabase(let message){
+            print(message)
+        } catch {
+            
+        }
     }
 }
 

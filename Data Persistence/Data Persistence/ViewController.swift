@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SQLite3
 
 struct UserDefaultsKeys {
     static let boolKey = "Key1"

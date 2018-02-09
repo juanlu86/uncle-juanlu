@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-204" y="-555"/>
         </scene>
-        <!--Core Data Table View Controller-->
+        <!--Tasks Table View Controller-->
         <scene sceneID="Fyn-V5-hIe">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PLJ-o9-Czc" customClass="CoreDataTableViewController" customModule="Data_Persistence" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PLJ-o9-Czc" customClass="TasksTableViewController" customModule="Data_Persistence" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6vW-u7-2Ym"/>
                         <viewControllerLayoutGuide type="bottom" id="6Cs-lW-c8v"/>

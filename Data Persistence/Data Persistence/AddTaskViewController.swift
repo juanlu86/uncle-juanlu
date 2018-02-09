@@ -2,9 +2,9 @@ import UIKit
 
 class AddTaskViewController: UIViewController {
     @IBOutlet weak var taskTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -15,6 +15,6 @@ class AddTaskViewController: UIViewController {
         // Save the data to coredata
 
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        let _ = navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }

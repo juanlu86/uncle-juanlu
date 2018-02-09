@@ -13,6 +13,9 @@
 		06265D8A202CC7B900792B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06265D89202CC7B900792B57 /* Assets.xcassets */; };
 		06265D8D202CC7B900792B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06265D8B202CC7B900792B57 /* LaunchScreen.storyboard */; };
 		06265D95202D0BA700792B57 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06265D94202D0BA700792B57 /* SQLiteDatabase.swift */; };
+		06265DB9202D197C00792B57 /* DataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06265DB7202D197C00792B57 /* DataPersistence.xcdatamodeld */; };
+		06265DBB202D1BE700792B57 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06265DBA202D1BE700792B57 /* CoreDataTableViewController.swift */; };
+		06265DBD202D1CC600792B57 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06265DBC202D1CC600792B57 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		06265D8C202CC7B900792B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06265D8E202CC7B900792B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06265D94202D0BA700792B57 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		06265DB8202D197C00792B57 /* DataPersistence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataPersistence.xcdatamodel; sourceTree = "<group>"; };
+		06265DBA202D1BE700792B57 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		06265DBC202D1CC600792B57 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		06265D81202CC7B900792B57 /* Data Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				06265DBC202D1CC600792B57 /* AddTaskViewController.swift */,
+				06265DBA202D1BE700792B57 /* CoreDataTableViewController.swift */,
 				06265D82202CC7B900792B57 /* AppDelegate.swift */,
 				06265D84202CC7B900792B57 /* ViewController.swift */,
 				06265D86202CC7B900792B57 /* Main.storyboard */,
@@ -63,6 +71,7 @@
 				06265D8B202CC7B900792B57 /* LaunchScreen.storyboard */,
 				06265D8E202CC7B900792B57 /* Info.plist */,
 				06265D94202D0BA700792B57 /* SQLiteDatabase.swift */,
+				06265DB7202D197C00792B57 /* DataPersistence.xcdatamodeld */,
 			);
 			path = "Data Persistence";
 			sourceTree = "<group>";
@@ -140,8 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06265D85202CC7B900792B57 /* ViewController.swift in Sources */,
+				06265DBD202D1CC600792B57 /* AddTaskViewController.swift in Sources */,
 				06265D83202CC7B900792B57 /* AppDelegate.swift in Sources */,
 				06265D95202D0BA700792B57 /* SQLiteDatabase.swift in Sources */,
+				06265DBB202D1BE700792B57 /* CoreDataTableViewController.swift in Sources */,
+				06265DB9202D197C00792B57 /* DataPersistence.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +336,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		06265DB7202D197C00792B57 /* DataPersistence.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				06265DB8202D197C00792B57 /* DataPersistence.xcdatamodel */,
+			);
+			currentVersion = 06265DB8202D197C00792B57 /* DataPersistence.xcdatamodel */;
+			path = DataPersistence.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 06265D77202CC7B900792B57 /* Project object */;
 }

@@ -18,12 +18,12 @@ class Person {
 }
 
 //let person1 = Person(name: "John")
-var person2: Person
 
-do {
-    let person1 = Person(name: "John")
-    person2 = person1
-}
+//do {
+//    let person1 = Person(name: "John")
+//}
+
+
 
 //    var apartment: Apartment!
 
